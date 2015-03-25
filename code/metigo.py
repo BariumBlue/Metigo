@@ -92,7 +92,7 @@ class Timeline:
 		self.boardh = boardh
 
 	def in_bounds(self, x,y,t):
-		if t<0 or t>self.nboards:return False
+		if t<0 or t>=self.nboards:return False
 		return self.boards[t].in_bounds(x,y)
 
 	def get_square(self, x,y,t):
