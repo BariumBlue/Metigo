@@ -135,7 +135,6 @@ class graphical_game():
 				if square.on!=[]:
 					piece = square.on[0]
 					piece.erase(self.gh.tl)
-					print 'ERASING!'
 					return
 
 				#left click
