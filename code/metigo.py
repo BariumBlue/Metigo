@@ -344,7 +344,7 @@ class PieceNode:
 
 		for neighborx, neighbory in [(0,-1),(0,1),(-1,0),(1,0)]:
 			nsquare = board.get_square( self.x+neighborx, self.y+neighbory )
-			if nsquare==None: continue
+			if nsquare==None or nsquare.on==[]: continue
 
 			other = nsquare.on[0]
 			if other.pdat.player == self.pdat.player:
